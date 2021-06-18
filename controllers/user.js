@@ -4,10 +4,6 @@ const index = (req, res) => {
   });
 };
 
-const anh = () => {
-  return 'anh yeu em';
-};
-
 module.exports = {
   index,
 };
