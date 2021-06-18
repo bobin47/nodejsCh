@@ -4,7 +4,9 @@ const index = (req, res) => {
   });
 };
 
-const anh
+const anh = () => {
+  return 'anh yeu em';
+};
 
 module.exports = {
   index,
