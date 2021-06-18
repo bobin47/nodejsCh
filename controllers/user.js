@@ -4,11 +4,6 @@ const index = (req, res) => {
   });
 };
 
-const chuog = (req, res) => {
-  console.log(req);
-};
-
 module.exports = {
   index,
-  chuog,
 };
