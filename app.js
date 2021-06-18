@@ -1,9 +1,16 @@
 const express = require('express');
 const logger = require('morgan');
+
 const app = express();
+
+const usersRoute = require('./routes/users');
+const moveRoute = require('./routes/movie');
 const port = 3000;
 
-// app.use(logger('dev'));
+//app.use(logger('dev'));
+
+app.use('/', usersRoute);
+app.use('/', moveRoute);
 
 // app.use((req, res, next) => {
 //   const err = new Error('Not Found');
@@ -24,7 +31,7 @@ const port = 3000;
 
 app.get('/', (req, res) => {
   return res.status(200).json({
-    message: 'Server is Ok',
+    message: 'Server is Ok(up data)',
   });
 });
 
